@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000211;
+}
+
+.countText{
+	color: #41ceff;
+	font-size: 24px;
+	text-shadow: 1px 1px 2px black, 0 0 5px blue, 0 0 5px darkblue;
+}
+.decremnet{
+	background-color: #000211;
+  border-radius: 20px 0 0 20px;
+  padding: 5px;
+}
+.increment{
+	background-color: #000211;
+  border-radius: 0px 20px 20px 0px;
+  padding: 5px;
+}
+.number{
+	outline: none;
+	padding: 3px;
+	text-align: center;
+	color: black;
+}
+.redText{
+	color: #931509;
+	text-shadow: 1px 1px 2px black, 0 0 5px red
+}
+.progressbar1{
+	border-bottom: 1px solid #41ceff;
+	height: 3px;
+}
+.progressbar2{
+	border-bottom: 1px solid white;
+	height: 3px;
+}
+.characters{
+	z-index: -1;
+}
+.bg-back{
+	background-color: #000211;
+}
+.borderImg{
+	border: 1px solid white;
+}
+.myButton{
+	border-radius: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border: 1px solid white;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color  .35s ease-in-out;
+}
+.myButton:hover{
+	border-radius: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border: 1px solid #931509;
+	background-color: #931509;
+	font-size: 18px;
+}
+.bloodClick{
+	color: white;
+	transition: color  .35s ease-in-out;
+}
+.bloodClick:hover{
+	color: #931509;
+}
+.novisi{
+	opacity:0;
+}
+.ani {
+	position: absolute;
+	top: 0px;
+  animation-name: example;
+  animation-duration: 2s;
+  left: 0;
+}
+
+@keyframes example {
+  0%   {width:200%;opacity:0;left:-50%;top:20%}
+  94%   {width:200%;opacity:0;left:-50%;top:20%}
+  95%   {width:200%;opacity:1;left:-50%;top:20%}
+  100% {width:100%;opacity:1;left:0%;top:0%}
+}
+
+.cha_ani{
+	width: 80%;
+	margin: auto;
+	animation-name: ani1;
+  animation-duration: .1s;
+  animation-iteration-count: 3;
+  animation-delay: 2.2s;
+}
+@keyframes ani1{
+	0%{margin-left: 9.7%}
+	100%{margin-left: 10.3%}
+}
+
+.showAni{
+	opacity: 1;
+	animation-name: ani2;
+  animation-duration: 1s;
+}
+@keyframes ani2{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+
+.hideAni{
+	opacity: 0;
+	animation-name: ani3;
+  animation-duration: 1s;
+}
+@keyframes ani3{
+	0%{opacity: 1}
+	100%{opacity: 0}
+}
+
+
+.body {
+  scrollbar-width: thin;     
+  scrollbar-color: #202433 #a8a2a1;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #202433;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a8a2a1;
+  border-radius: 20px;
+  border: 3px solid #202433;
+}

@@ -1,0 +1,40 @@
+body { 
+   background: #0f0f0f; 
+}
+header {
+   position: relative;
+   width: 100%;
+   background-size: cover !important;
+   padding:0%;
+}
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+}
+
+#faq_black {
+   background: #1F1F1F url(../images/landing/WHITE_BG.png) no-repeat;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   position: relative;
+   width: 100%;
+}
+
+#team_back {
+   background: #1F1F1F url(../images/landing/team_background.png) no-repeat;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   position: relative;
+   width: 100%;
+}
+
+#gallery {
+   z-index: -1;
+   background: #1F1F1F url(../images/landing/gallery.png) repeat;
+   background-repeat: repeat-x;
+   position: relative;
+   height: 600px;
+   background-position-x: 177px;
+}
+
